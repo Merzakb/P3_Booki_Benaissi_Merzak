@@ -114,6 +114,64 @@ main{
     align-self: stretch;
 }
 
+.search-bar {
+    display: flex;
+    width: 23.5625rem;
+    height: 3.0625rem;
+    align-items: center;
+}
+
+.fa-location-dot, .input, .btn-search {
+    display: block;
+}
+.fa-location-dot{
+    background: var(--main-bg-color);
+    color: #000;
+    border-radius: 0.9375rem 0 0 0.9375rem;
+    padding: 1.7rem 1.125rem;
+    margin: 0;
+}
+
+.input {
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 0;
+    border: none;
+    background: var(--white, #FFF);
+    border-top: 0.063rem solid var(--grey, #F2F2F2);
+    border-bottom: 0.063rem solid var(--grey, #F2F2F2);
+    font-size: 1.125rem;
+    font-weight: 700;
+    width: 12rem;
+}
+::placeholder {
+    color: var(--black, #000);
+}
+
+.input::-moz-placeholder {
+    color: var(--black); 
+}  
+
+.input:focus::placeholder {
+    color:transparent; 
+}
+
+.input::-moz-placeholder{
+    color: #000;
+}
+.input:focus {
+    outline: 0rem solid transparent;
+    
+}
+.btn-search {
+    padding: 0.94rem 1rem ;
+    background-color: var(--main-color);
+    border: 0.063rem solid var(--main-color);
+    border-radius:0  0.9375rem 0.9375rem 0;
+    color: var(--white, #FFF);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
 .filters {
     font-size: 1.0625rem;
     font-weight: 700;
