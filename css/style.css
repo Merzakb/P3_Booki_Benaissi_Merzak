@@ -28,7 +28,12 @@ body {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
 }
 
 .card {
