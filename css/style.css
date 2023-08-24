@@ -73,8 +73,7 @@ a {
 
 .nav-bar-logo {
     display: flex;
-    /* padding: 1.875rem 3.125rem; */
-    padding: 1.875rem 0;
+    padding: 1.875rem 3.125rem;
 }
 
 .nav-bar-logo img {
@@ -103,7 +102,9 @@ a {
 }
 
 /* main */
-
+main{
+    padding: 0 3.13rem;
+}
 /****** Research section **********************/
 .search {
     display: flex;
