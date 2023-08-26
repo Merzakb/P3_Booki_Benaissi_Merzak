@@ -302,7 +302,6 @@ main{
 }
 
 .fa-xs {
-   text-align: ;
     width: 0.89338rem;
     height: 0.82813rem;
     margin: 0;
@@ -432,6 +431,40 @@ main{
     height:100%;
 }
 
+/********** FOOTER ***************/
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    background: var(--grey, #F2F2F2);
+    padding: 0;
+    margin-top: 2.19rem;
+}
+
+.footer-card {
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9375rem;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.footer-card-title, .footer-card-subtitle {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-card a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.footer-card a:hover {
+    color: var(--main-color);
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
