@@ -22,11 +22,6 @@
     --title-font-weight: 700;
 }
 
-.fa-solid {
-    color: var(--main-color);
-    margin-right: 0.62rem;
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -49,10 +44,15 @@ main {
     flex-direction: column;
     gap: 2.19rem;
 }
+
 .section-title {
     margin: 0;
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
+}
+
+ul {
+    list-style: none;
 }
 
 a {
@@ -60,6 +60,11 @@ a {
     color: var(--black);
     margin: 0;
     padding: 0;
+}
+
+.fa-solid {
+    color: var(--main-color);
+    margin-right: 0.62rem;
 }
 
 .card {
@@ -87,8 +92,10 @@ a {
     color: var(--main-bg-color)
 }
 
-/************   HEADER  *********************/
-.nav-bar{
+/********************************************/
+/***************   HEADER  ******************/
+/********************************************/
+header{
     display: flex;
     padding-right: 0;
     justify-content: space-between;
@@ -97,17 +104,17 @@ a {
     height: 4.94rem;
 }
 
-.nav-bar-logo {
+.header-logo {
     display: flex;
     padding: 1.875rem 3.125rem;
 }
 
-.nav-bar-logo img {
+.header-logo img {
     width: 3.81813rem;
     height: 1.1875rem;
 }
 
-.nav-bar-menu {
+.nav-bar ul {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -116,15 +123,18 @@ a {
     gap: 4.25rem;
 }
 
-.menu-item a {
-    padding-top: 0.88rem;
+.nav-bar-item a {
+    padding-top: 0.88rem; /* pour laisser de l'espace à l'apparition de la ligne blue à l'état :hover */
 }
-.menu-item a:hover{
+
+.nav-bar-item a:hover{
     border-top: solid 0.188rem var(--main-color);
     color: var(--main-color);
 }
 
+/**********************************************/
 /****** Research section **********************/
+/**********************************************/
 .search {
     display: flex;
     flex-direction: column;
@@ -136,7 +146,6 @@ a {
 .search-bar {
     display: flex;
     width: 23.5625rem;
-    height: 3.0625rem;
     align-items: center;
 }
 
@@ -191,32 +200,45 @@ a {
     font-weight: var(--body-highlight-font-weight);
 }
 
-.filters {
+.btn-search-mobile {
+    display: none;
+}
+.filters-bar {
     font-size: 1.0625rem;
     font-weight: var(--body-highlight-font-weight);
     display: flex;
-    flex-flow: row wrap;
-    display: flex;
+    flex-wrap: wrap;
     gap: 0.9375rem;
-    height: 3.13rem;
 }
 
-.btn-filters  {
+.filters{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 0.9375rem;
+}
+
+.btn-filter  {
     color: #000;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
+    height: 3.125rem;
     margin: 0;
     padding: 0.25rem 1.1875rem;
     border-radius: 1.5625rem;
     border: 0.125rem solid var(--grey-tint-2, #D9D9D9);
 }
 
-.btn-filters:hover {
+.btn-filter:hover {
     background: var(--blue-light, #DEEBFF);
 }
 
+/**********************************************/
 /****** Hebergements And Populaires ***********/
+/**********************************************/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -226,11 +248,10 @@ a {
     gap: 2.5rem;
 }
 
-.hebergements-and-populaires section {
+.hebergements, .populaires {
     background-color: var(--main-bg-color);
     border-radius: 1.25rem;
     padding: 1.875rem;
-    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
@@ -388,21 +409,20 @@ a {
     display: flex;
 }
 
-/***************** ACTIVITIES  ******************/
+/**********************************************/
+/***************** ACTIVITIES  ****************/
+/**********************************************/
 .activities {
     display: flex;
     padding: 1.875rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.875rem;
-    align-self: stretch;
     background-color: var(--white);
 }
 
 .activities-cards {
     display: flex;
-    flex-shrink: 0;
-    align-self: stretch;
     gap: 1.875rem;
 }
 
@@ -411,7 +431,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex: 1 0 0;
+    flex: 1 0 0; /* pour partager l'espace restant identiquement entre les différentes cartes */
     border-radius: 1.25rem;
     padding: 0;
     margin: 0;
@@ -421,7 +441,7 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
-    height: 85%;
+    height: 85%; /* l'image occupe 85% de la carte */
     flex-shrink: 0;
     align-self: stretch;
     border-radius: 1.25rem 1.25rem 0rem 0rem;
@@ -430,7 +450,6 @@ a {
 .activities-cards .card img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
     border-radius: 1.25rem 1.25rem 0rem 0rem;
 }
 
@@ -449,9 +468,11 @@ a {
     height:100%;
 }
 
+/**********************************/
 /********** FOOTER ***************/
+/********************************/
 
-.footer {
+footer {
     display: flex;
     align-items: flex-start;
     align-self: stretch;
@@ -478,7 +499,9 @@ a {
     color: var(--main-color);
 }
 
+/*********************************************************************/
 /* Le code ci-dessous correspond à la version responsive uniquement */
+/*******************************************************************/
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
