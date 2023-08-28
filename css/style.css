@@ -51,10 +51,10 @@ main {
     font-weight: var(--title-font-weight);
 }
 
+/* delete origin style & decoration for <ul> & link <a> */
 ul {
     list-style: none;
 }
-
 a {
     text-decoration: none;
     color: var(--black);
@@ -62,6 +62,7 @@ a {
     padding: 0;
 }
 
+/* incons */
 .fa-solid {
     color: var(--main-color);
     margin-right: 0.62rem;
@@ -173,7 +174,6 @@ header{
     width: 12rem;
 }
 
-
 /* to change placeholder text color */
 ::placeholder {
     color: var(--black);
@@ -227,7 +227,7 @@ header{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    height: 3.125rem;
+    height: 2.63rem;
     margin: 0;
     padding: 0.25rem 1.1875rem;
     border-radius: 1.5625rem;
@@ -243,6 +243,16 @@ header{
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
+}
+
+.fa-circle-info{
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+    border: 0.125rem solid var(--grey-tint-2, #D9D9D9);
+    color: var(--white);
+    margin: 0;
 }
 
 /**********************************************/
