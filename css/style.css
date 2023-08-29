@@ -673,7 +673,6 @@ footer {
     
     .filters-bar {
         flex-direction: column;
-        gap: auto;
     }
 
     .btn-filter{
@@ -708,7 +707,7 @@ footer {
     .hebergements {
         width: auto;
         background-color: var(--white);
-        padding: 1.25;
+        padding: 1.25rem;
         margin: 0;
     }
 
