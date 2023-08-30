@@ -539,6 +539,10 @@ footer {
         align-items: flex-start;
     }
 
+    .filters {
+        align-self: flex-start;
+    }
+    
     .filters-bar p {
         margin: 0;
     }   
