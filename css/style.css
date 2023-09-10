@@ -43,6 +43,7 @@ main {
     display:flex;
     flex-direction: column;
     gap: 2.19rem;
+    width: 100%;
 }
 
 .section-title {
@@ -54,6 +55,7 @@ main {
 /* delete origin style & decoration for <ul> & link <a> */
 ul {
     list-style: none;
+    width: 100%;
 }
 a {
     text-decoration: none;
