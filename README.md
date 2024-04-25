@@ -13,7 +13,7 @@ Booki est un site Internet qui permet aux usagers de trouver des hébergements e
 ## Authors
 
 - [@Merzak](https://github.com/Merzakb)
-![Logo](readme/logo.svg)
+
 ![Logo](readme/made-by-merzak.svg)
 
 
