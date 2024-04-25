@@ -1,4 +1,4 @@
-[![forthebadge](readme/built-with-🤍.svg)] [![forthebadge](readme/made-with-html.svg)] [![forthebadge](readme/made-with-css.svg)]
+![forthebadge](readme/built-with-🤍.svg)![forthebadge](readme/made-with-html.svg) ![forthebadge](readme/made-with-css.svg)
 
 
 # Booki ![Logo](images/logo/Booki.svg)
@@ -13,7 +13,7 @@ Booki est un site Internet qui permet aux usagers de trouver des hébergements e
 ## Authors
 
 - [@Merzak](https://github.com/Merzakb)
-![Logo](readme/logo.png)
+![Logo](readme/logo.svg)
 ![Logo](readme/made-by-merzak.svg)
 
 
