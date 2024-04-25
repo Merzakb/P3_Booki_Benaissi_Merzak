@@ -1,4 +1,4 @@
-![forthebadge](readme/built-with-🤍.svg)![forthebadge](readme/made-with-html.svg) ![forthebadge](readme/made-with-css.svg)
+![forthebadge](readme/built-with-🤍.svg)  ![forthebadge](readme/made-with-html.svg)  ![forthebadge](readme/made-with-css.svg)
 
 
 # Booki ![Logo](images/logo/Booki.svg)
