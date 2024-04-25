@@ -3,7 +3,7 @@
 
 # Booki ![Logo](images/logo/Booki.svg)
 
-Booki est un site Internet qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
+Booki is a website that allows users to find accommodations and activities in the city of their choice.
 
 ## Screenshots
 
